@@ -9,23 +9,34 @@
     <div class="form_peso_atual">
         <form id="peso" method="post">
             <div class="form_peso">
+                <h3>Qual é o seu peso?</h3>
                 <label for="Peso Atual"></label>
                 <input type="number" id="peso" name="peso" required placeholder="Digite seu peso">
             </div>
     </div>
 
-    <div class="form_objetivo">
-        <form id="objetivo" method="post">
-            <div class="form_objetivo">
-                <label for="Objetivo atual (emagrecer, perder peso ou ganhar massa?)"></label>
-                <input type="text" id="objetivo" name="objetivo" required placeholder="Digite seu objetivo">
+    <div>
+        <form action="#" method="post">
+            <h3>Qual é o seu objetivo? (Emagrecer, Perder peso, Ganhar massa)</h3>
+            <label for="objetivo"></label>
+            <select name="objetivo" id="objetivo">
+                <option value="emagrecer">Emagrecer</option>
+                <option value="perder peso">Perder peso</option>
+                <option value="ganhar massa">Ganhar massa</option>
+            </select>
+        </form>
     </div>
 
-    <div class="form_nivel_aividade">
-        <form id="nivel" method="post">
-            <div class="form_nivel_atividade">
-                <label for="Nivel atividade fisica (Baixo, medio ou alto?)"></label>
-                <input type="text" id="nivel_aividade" name="nivel_atividade" required placeholder="Digite seu nivel de atividade Fisica">
+    <div>
+        <form action="#" method="post">
+            <h3>Nivel de atividade fisica (baixo, medio, alto)?</h3>
+            <label for="nivel de atividade fisica"></label>
+            <select name="nivel de atividade fisica" id="nivel_atividade">
+                <option value="baixo">Baixo</option>
+                <option value="medio">Medio</option>
+                <option value="alto">Alto</option>
+            </select>
+        </form>
     </div>
     
 </body>
