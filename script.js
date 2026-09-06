@@ -9,3 +9,4 @@ formulario.addEventListener("submit", function(evento) {
     const objetivo = dados.get('objetivo');
     const nivel_atividade = dados.get('nivel_atividade');
 });
+
