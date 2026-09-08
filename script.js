@@ -10,11 +10,16 @@ formulario.addEventListener("submit", function(evento) {
     const nivel_atividade = dados.get('nivel_atividade');
 });
 
-//Nivel de atividade fisica
-const baixo = 1.0;
-const medio = 1.5;
-const alto = 2.0;
+const multiplicador = peso;
 
-const result1 = peso * baixo
-const result2 = peso * medio
-const result3 = peso * alto
+const cenarios = [
+    { nome: "nivel baixo", valor: 1.0 },
+    { nome: "nivel medio", valor: 1.5 },
+    { nome: "nivel alto", valor: 2.0 }
+];
+
+cenarios.forEach(cenario => {
+    const resultado = multiplicador * nivel.valor;
+});
+    
+ 
