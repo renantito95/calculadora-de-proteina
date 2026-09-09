@@ -5,21 +5,26 @@ formulario.addEventListener("submit", function(evento) {
 
     const dados = new FormData(formulario);
 
-    const peso = dados.get('peso');
+    const peso = Number(dados.get('peso'));
     const objetivo = dados.get('objetivo');
-    const nivel_atividade = dados.get('nivel_atividade');
+    const nivel_atividade = String(dados.get('nivel_atividade')).toLowerCase();
+
+    const multiplicador = peso;
+
+    const fatores = {
+        baixo: 1.2,
+        medio: 1.5,
+        alto: 2.0, 
+    };
+
+const opcaoSelecionada = nivel_atividade;
+
+const resultado = multiplicador * fatores[opcaoSelecionada];
+
+const campoResultado = document.getElementById('resultadoTexto');
+campoResultado.textContent = `Seu consumo medio de proteina é de: ${resultado}`;
 });
 
-const multiplicador = peso;
 
-const cenarios = [
-    { nome: "nivel baixo", valor: 1.0 },
-    { nome: "nivel medio", valor: 1.5 },
-    { nome: "nivel alto", valor: 2.0 }
-];
-
-cenarios.forEach(cenario => {
-    const resultado = multiplicador * nivel.valor;
-});
     
  
