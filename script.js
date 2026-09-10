@@ -21,8 +21,10 @@ const opcaoSelecionada = nivel_atividade;
 
 const resultado = multiplicador * fatores[opcaoSelecionada];
 
+
 const campoResultado = document.getElementById('resultadoTexto');
 campoResultado.textContent = `Seu consumo medio de proteina é de: ${resultado}`;
+formulario.reset();
 });
 
 
